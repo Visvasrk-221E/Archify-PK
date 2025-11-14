@@ -1,8 +1,8 @@
 # Archify-PK
 
-**--By Visvasrk**
-**--Release Version 1**
-**--Child-Of : auto-bspwm for kali : https://github.com/r1vs3c/auto-bspwm by r1vs3c**
+- **--By Visvasrk**
+- **--Release Version 1**
+- **--Child-Of : auto-bspwm for kali : https://github.com/r1vs3c/auto-bspwm by r1vs3c**
 
 > This is a bash script that automates the process of setting up a hacking environment, fast reliable with less additional overheads and stops heavy dependencies for xfce or mate desktop environment. This is built on top of mate DE, but using bspwm window manager to rice a completely new arch and kali blended feel for the users using the tiled window manager [bspwm](https://github.com/baskerville/bspwm).
 
