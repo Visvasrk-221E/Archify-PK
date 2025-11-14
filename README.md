@@ -1,4 +1,14 @@
 # Archify-PK
+
+    _             _     _  __             ____  _  __
+   / \   _ __ ___| |__ (_)/ _|_   _      |  _ \| |/ /
+  / _ \ | '__/ __| '_ \| | |_| | | |_____| |_) | ' / 
+ / ___ \| | | (__| | | | |  _| |_| |_____|  __/| . \ 
+/_/   \_\_|  \___|_| |_|_|_|  \__, |     |_|   |_|\_\
+                              |___/                  
+
+**--By Visvasrk**
+
 > This is a bash script that automates the process of setting up a hacking environment, fast reliable with less additional overheads and stops heavy dependencies for xfce or mate desktop environment. This is built on top of mate DE, but using bspwm window manager to rice a completely new arch and kali blended feel for the users using the tiled window manager [bspwm](https://github.com/baskerville/bspwm).
 ## Note
 > The configuration is done for parrot linux and is defaulted to its applications in the configuration file. If your are in another debian based distro like kali or ubuntu, you might have to edit the setup.sh and install the correct name of the dependencies as per the requirements of your current distro. *Currently, this is for Parrot Security OS*
