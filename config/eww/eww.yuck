@@ -1,0 +1,33 @@
+(defpoll neofetch :interval "60s" "neofetch --stdout")
+(defpoll sxhkd_shortcuts :interval "5s" "bash ~/.config/eww/scripts/sxhkd_shortcuts.sh")
+
+(defwindow neofetch
+           :monitor 0
+           :geometry (geometry :x "10px"
+                               :y "170px"
+                               :width "300px"
+                               :height "450px"
+                               :anchor "top left")
+           :stacking "fg"
+           :reserve (struts :distance "40px" :side "top")
+           :windowtype "desktop"
+           :wm-ignore false
+           (label :text "${neofetch}"
+                  :style "color:skyblue;font-family:monospace;font-size:15px;font-weight:bold;padding:20px;border-bottom:5px solid purple;background:rgba(0,0,0,0.5);")
+                  
+)
+
+(defwindow shortcuts
+           :monitor 0
+           :geometry (geometry :x "-10px"
+                               :y "688px"
+                               :width "100px"
+                               :height "70px"
+                               :anchor "top right")
+           :stacking "fg"
+           :windowtype "desktop"
+           (label :markup "${sxhkd_shortcuts}"
+                  :style "color:skyblue;font-weight:bold;font-family:monospace;font-size:15px;padding:10px;border-left:0px solid purple;background:linear-gradient(toright, rgba(0,0,0,0.6), rgba(0,0,0,0.5));")
+                  
+)
+
