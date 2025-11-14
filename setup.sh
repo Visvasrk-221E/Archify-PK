@@ -1,6 +1,7 @@
 #!/usr/bin/bash
 
 # Author: Visvasrk
+sudo apt install figlet
 
 # Colours
 greenColour="\e[0;32m\033[1m"
@@ -16,6 +17,17 @@ grayColour="\e[0;37m\033[1m"
 dir=$(pwd)
 fdir="$HOME/.local/share/fonts"
 user=$(whoami)
+header=$(cat << 'EOF'
+    _             _     _  __             ____  _  __
+   / \   _ __ ___| |__ (_)/ _|_   _      |  _ \| |/ /
+  / _ \ | '__/ __| '_ \| | |_| | | |_____| |_) | ' /
+ / ___ \| | | (__| | | | |  _| |_| |_____|  __/| . \
+/_/   \_\_|  \___|_| |_|_|_|  \__, |     |_|   |_|\_\
+                              |___/
+
+EOF
+)
+
 
 trap ctrl_c INT
 
@@ -26,16 +38,8 @@ function ctrl_c(){
 
 function banner(){
 	echo -e "\n${turquoiseColour}              _____            ______"
-	sleep 0.05
-	echo -e "______ ____  ___  /______      ___  /___________________      ________ ___"
-	sleep 0.05
-	echo -e "_  __ \`/  / / /  __/  __ \     __  __ \_  ___/__  __ \_ | /| / /_  __ \`__ \\"
-	sleep 0.05
-	echo -e "/ /_/ // /_/ // /_ / /_/ /     _  /_/ /(__  )__  /_/ /_ |/ |/ /_  / / / / /"
-	sleep 0.05
-	echo -e "\__,_/ \__,_/ \__/ \____/      /_.___//____/ _  .___/____/|__/ /_/ /_/ /_/    ${endColour}${yellowColour}(${endColour}${grayColour}By ${endColour}${purpleColour}Visvasrk${endColour}${yellowColour})${endColour}${turquoiseColour}"
-	sleep 0.05
-    	echo -e "                                             /_/${endColour}"
+	echo "$header"
+   	echo -e "                                             /_/${endColour}"
 }
 
 if [ "$user" == "root" ]; then

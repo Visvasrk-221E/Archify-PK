@@ -1,8 +1,11 @@
-# auto-bspwm
-> This is a Bash script that automates the setup of a professional hacking environment for Kali Linux using the tiled window manager [bspwm](https://github.com/baskerville/bspwm).
+# Archify-PK
+> This is a bash script that automates the process of setting up a hacking environment, fast reliable with less additional overheads and stops heavy dependencies for xfce or mate desktop environment. This is built on top of mate DE, but using bspwm window manager to rice a completely new arch and kali blended feel for the users using the tiled window manager [bspwm](https://github.com/baskerville/bspwm).
+## Note
+> The configuration is done for parrot linux and is defaulted to its applications in the configuration file. If your are in another debian based distro like kali or ubuntu, you might have to edit the setup.sh and install the correct name of the dependencies as per the requirements of your current distro. *Currently, this is for Parrot Security OS*
 
 ## Installation
 1. Install available updates.
+*Note : Parrot ships with backports enabled by default. Before updating, you have to disable the backports to maintain ONLY STABLE releases and to stop 'bpo~' dependencies from conflicting with stable versions.*
 
 ```shell
 sudo apt update
@@ -10,6 +13,8 @@ sudo apt upgrade -y
 ```
 
 2. Clone the repository and navigate to it.
+
+*Recommended to start it from the home directory. It would be easy for you to manage the files.*
 
 ```shell
 git clone https://github.com/Visvasrk-221E/Archify-PK.git
@@ -29,6 +34,8 @@ chmod +x setup.sh
 ```
 
 5. After the script has finished, you will be prompted to restart the system. Once you have rebooted, select `bspwm` as the window manager and then log in.
+6. You are free to open up an issue or contact the email address in my webpage. This is a personal edit, combining configurations of several others into a single DE for parrot os. Would be useful for those who need a Kali + Arch feel with parrot's anonymity.
+7. Provide this project a star if you think that the setup is good and if you are willing to contribute to the **Parrot Ricing and Minimalism**, you are free to fork this repository and deploy it after sharing with me. It would be helpful for me for the further development and compiling ideas into something more asthetic.
 
 ## Overview of the environment
 
@@ -230,5 +237,8 @@ This configuration uses the following software:
 - **Screenshot**: [flameshot](https://flameshot.org/)
 - **File Manager**: Caja
 
+## Website
+- https://framework-221e-prototype.onrender.com/
+- I also have a discord community. You may join the community from my website.
 
 
