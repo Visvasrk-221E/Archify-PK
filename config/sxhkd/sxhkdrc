@@ -44,12 +44,12 @@ super + shift + {h,j,k,l}
     bspc node -s {west,south,north,east}
 
 # Shrink windows using arrows
-super + {Left,Right,Down,Up}
-    bspc node -z {left +20 0,right -20 0,down 0 -20,up 0 +20}
+super + {Right,Left,Up,Down}
+    bspc node -z {left +20 0,right -20 0,bottom 0 -20,top 0 +20}
 
 # Expand windows using arrows
 super + ctrl + {Left,Right,Down,Up}
-    bspc node -z {left -20 0,right +20 0,down 0 +20,up 0 -20}
+    bspc node -z {left -20 0,right +20 0,bottom 0 +20,top 0 -20}
 
 # Move windows between desktops using arrows
 super + alt + {Left,Right}

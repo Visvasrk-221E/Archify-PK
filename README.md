@@ -57,7 +57,7 @@ chmod +x setup.sh
 
 ![btop](/assets/btop.png "btop")
 
-![firstlook](/assets/firstbspwm.png "First Look")
+![reconfigured](/assets/reconfigured.png "After Garuda Wallpaper")
 
 # sxhkd keybindings — bspwm + MATE (Parrot OS)
 
