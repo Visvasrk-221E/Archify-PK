@@ -45,18 +45,21 @@ chmod +x setup.sh
 
 ## Overview of the environment
 
+### Desktop
+![Desktop](/assets/desktop.png "Desktop")
+### Kitty Terminals
 ![4-kitty-terminals](/assets/4kitty-terminals.png "4 kitty terminals")
-
+### Arch Digital City Wallpaper and Config edit
 ![arch-digital-city](/assets/arch-digital-city.png "Arch Digital City")
-
+### Dark Wallpaper
 ![archkali-dark-desktop](/assets/archkali-dark-desktop.png "Arch Kali Dark Desktop")
-
+### Caja File Manager
 ![caja](/assets/caja.png "caja file manager")
-
-![cmus-cava2](/assets/cmus-cava2.png "cmus cava")
-
+### Cmus and Cava - Your Music Companion
+![cmus-cava](/assets/cmus-cava.png "cmus cava")
+### Btop - More than htop
 ![btop](/assets/btop.png "btop")
-
+### Reconfigured
 ![reconfigured](/assets/reconfigured.png "After Garuda Wallpaper")
 
 # sxhkd keybindings — bspwm + MATE (Parrot OS)
@@ -69,6 +72,9 @@ Applies to bspwm + MATE setup with sxhkd. Uses <kbd> style for keys.
 - Arrow keys: <kbd>Left</kbd>, <kbd>Right</kbd>, <kbd>Up</kbd>, <kbd>Down</kbd>
 - Function keys: <kbd>F8</kbd>–<kbd>F11</kbd>
 - Media keys: <kbd>XF86Audio*</kbd>, <kbd>XF86MonBrightness*</kbd>
+- You can drag the window by left-click and drag your mouse while holding the super key.
+- You can resise the window by right-click and drag your mouse while holding the super key.
+- **Note : The above two mouse options work only when the window is in floating mode, ie click F8 (see below).**
 
 ### Terminal / applications
 - <kbd>Super</kbd> + <kbd>T</kbd> — Open MATE Terminal.  
