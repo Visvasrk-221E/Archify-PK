@@ -26,7 +26,6 @@ header=$(cat << 'EOF'
 EOF
 )
 
-sleep 60
 trap ctrl_c INT
 
 function ctrl_c(){
@@ -37,16 +36,15 @@ function ctrl_c(){
 function banner(){
 	echo -e "\n${turquoiseColour}              _____            ______"
 	echo "$header"
-   	echo -e "                                             /_/${endColour}"
+   	echo -e "                                             /${redColour}By Visvasrk /${endColour}"
 }
-
 if [ "$user" == "root" ]; then
 	banner
 	echo -e "\n\n${redColour}[!] You should not run the script as the root user!\n${endColour}"
     	exit 1
 else
 	banner
-	sleep 1
+	sleep 3
 	echo -e "\n\n${blueColour}[*] Installing necessary packages for the environment...\n${endColour}"
 	sleep 2
 	sudo apt install -y caja guake cmus cava btop plank kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop python3-pip procps tty-clock fzf lsd bat pamixer flameshot
