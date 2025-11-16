@@ -12,6 +12,10 @@ super = Mod4
 #------------------------
 
 # Open Mate Terminal
+
+ctrl + alt + r
+	~/.local/bin/refresh
+
 super + t
     mate-terminal
 
@@ -30,6 +34,12 @@ super + shift + d
 # Lock Screen via i3lock-fancy
 super + l
     /usr/bin/i3lock-fancy
+
+alt + F1
+	eww open csheet && pkill polybar && bspc desktop -f ^10
+
+alt + F2
+	eww close csheet && ~/.config/polybar/./launch.sh --shapes && bspc desktop -f last
 
 #------------------------
 # Window Management
@@ -217,4 +227,16 @@ super + period
 
 super + comma
     bspc node -f prev.occupied
+
+super + m
+	mousepad
+
+super + alt + h
+	pkill polybar
+
+super + alt + u
+	~/.config/polybar/./launch.sh --shapes
+
+super + alt + n
+	nm-connection-editor
 

@@ -1,0 +1,17 @@
+;; widgets.yuck
+
+(defwidget notify-widget []
+  (box :orientation "horizontal"
+       :class "notify-box"
+       :halign "center"
+       :valign "center"
+    (input :class "notify-input"
+           :tooltip "Type your message here"
+           :value notify_text
+           :onchange "${EWW_CMD} update notify_text={}"
+           :onaccept "notify-send 'Eww Notify' '{}'"
+           :timeout "200ms")
+    (button :class "notify-button"
+            :tooltip "Send notification"
+            :onclick "notify-send 'Eww Notify' '${notify_text}'"
+      (label :text "Send"))))

@@ -37,9 +37,11 @@ bspc config pointer_action3 resize_corner # Super + Right drag = corner resize
 
 
 feh --bg-fill ~/Wallpapers/archkali.png &
-~/.config/polybar/./launch.sh --shapes &
+~/.config/polybar/./launch.sh --shapes
 
 picom --config ~/.config/picom/picom.conf &
+#picom &
+
 # wal -R
 eww daemon
 eww open neofetch

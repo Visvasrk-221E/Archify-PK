@@ -14,7 +14,7 @@ $shadow: 0 10px 30px rgba(0,0,0,0.35);
 /* ---------- Root widget container ---------- */
 .clock-wrap {
   padding: 14px 18px;
-  background:linear-gradient(-135deg, rgba(100, 0, 200, 0.3), rgba(0, 0, 255, 0.2));
+  background:linear-gradient(-135deg, rgba(100, 0, 100, 0.2), rgba(100, 0, 200, 0.2));
   box-shadow: $shadow;
   border: none;
   transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
@@ -81,3 +81,17 @@ $shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 
+* {
+  all: unset;
+}
+
+tooltip {
+  background-color: #14171c;
+  color: #b8bfe5;
+  font-family: Inconsolata SemiCondensed Medium;
+  font-weight: Bold;
+  font-size: 1rem;
+}
+
+@import "colors.scss";
+@import "cheatsheet/cheatsheet.scss";

@@ -1,0 +1,11 @@
+;; windows.yuck
+
+(defwindow second_window
+           :monitor 0
+           :geometry (geometry :x "10px"
+                               :y "-60px"
+                               :anchor "bottom left")
+           :stacking "fg"
+           :windowtype "dock"
+           :wm-ignore false
+  (notify-widget))
