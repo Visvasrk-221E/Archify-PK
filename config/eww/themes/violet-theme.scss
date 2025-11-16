@@ -1,0 +1,84 @@
+/* ---------- Design tokens ---------- */
+
+$bg: rgba(20, 22, 28, 0.55);        // translucent card
+$bg-strong: rgba(20, 22, 28, 0.75);
+$white: #e9eef3;
+$muted: #9aa5b1;
+$accent: #7cd1ff;                   // neon cyan
+$accent-2: #9f7cff;                 // violet for glow blend
+$radius: 18px;
+$border: 1px;
+$blur: 16px;
+$gap: 12px;
+$shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+/* ---------- Root widget container ---------- */
+.clock-wrap {
+  padding: 14px 18px;
+  background:linear-gradient(-135deg, rgba(100, 0, 200, 0.3), rgba(0, 0, 255, 0.2));
+  box-shadow: $shadow;
+  border: none;
+  transition: background 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+
+}
+
+.clock-wrap:hover {
+  background: $bg-strong;
+/*  transform: translateY(-1px); */  
+  box-shadow: 0 14px 36px rgba(0,0,0,0.4);
+}
+
+/* ---------- Clock line ---------- */
+.clock-face {
+  padding: 4px 4px;
+}
+
+.clock-hour,
+.clock-minute {
+  font-family: "JetBrains Mono", "SF Mono", monospace;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: $white;
+  text-shadow:
+    0 0 8px rgba($accent, 0.32),
+    0 0 18px rgba($accent-2, 0.18);
+}
+
+.clock-colon {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 40px;
+  color: lighten($muted, 18%);
+  padding: 0 6px;
+/*  transform: translateY(-1px); */
+  animation: colon-blink 2s steps(1) infinite;
+}
+
+.clock-second {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-size: 30px;
+  color: $accent;
+  margin-left: 0px;
+  padding: 2px 2px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba($accent,0.16), rgba($accent-2,0.12));
+  border: 1px solid rgba($accent,0.25);
+  text-shadow:
+    0 0 6px rgba($accent, 0.28),
+    0 0 12px rgba($accent-2, 0.18);
+}
+
+/* ---------- Date line ---------- */
+.clock-date {
+  margin-top: 6px;
+  font-family: "Inter", "Cantarell", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0.4px;
+  color: $muted;
+  opacity: 0.9;
+}
+
+

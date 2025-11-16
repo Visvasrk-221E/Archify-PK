@@ -1,0 +1,25 @@
+;; Define the widgets for the eww window
+
+;;============includes=======================================================
+
+
+;;============Define Digital Clock Widget===============================================
+
+(defwidget digital_clock []
+  (box :class "clock-wrap"
+       :orientation "v"
+       :halign "center" :valign "center"
+       (box :class "clock-face"
+            :spacing 6 :halign "center"
+            :orientation "v"
+            (box :class "hrmin"
+                 :spacing 4 :halign "left"
+                 :orientation "h"
+	         (label :class "clock-hour"   :text time_hour)
+     	         (label :class "clock-colon"  :text ":")
+          	 (label :class "clock-minute" :text time_minute)))
+       		 (box :class "secdate"
+	              :spacing "6" :halign "right"
+                      :orientation "h"
+       		      (label :class "clock-second" :text time_second)
+                      (label :class "clock-date" :text date_line))))

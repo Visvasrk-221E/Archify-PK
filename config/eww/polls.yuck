@@ -1,0 +1,18 @@
+;; Define the defpolls required for the eww
+
+
+
+;;=================neofetch and shortcuts====================================================
+
+(defpoll neofetch :interval "60s" "neofetch --stdout")
+(defpoll sxhkd_shortcuts :interval "5s" "bash ~/.config/eww/scripts/sxhkd_shortcuts.sh")
+
+
+;;=================Clock Widget and Time=====================================================
+
+(defpoll time_full :interval "1s" `date +"%H:%M:%S"`)
+(defpoll time_hour   :interval "1s" `date +"%H"`)
+(defpoll time_minute :interval "1s" `date +"%M"`)
+(defpoll time_second :interval "1s" `date +"%S"`)
+(defpoll date_line :interval "10s" `date +"%a, %d %b"`)
+

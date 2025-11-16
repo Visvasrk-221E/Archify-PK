@@ -1,8 +1,6 @@
 #!/usr/bin/bash
 
 # Author: Visvasrk
-sudo apt install figlet
-
 # Colours
 greenColour="\e[0;32m\033[1m"
 endColour="\033[0m\e[0m"
@@ -28,7 +26,7 @@ header=$(cat << 'EOF'
 EOF
 )
 
-
+sleep 60
 trap ctrl_c INT
 
 function ctrl_c(){
@@ -51,7 +49,7 @@ else
 	sleep 1
 	echo -e "\n\n${blueColour}[*] Installing necessary packages for the environment...\n${endColour}"
 	sleep 2
-	sudo apt install -y caja cmus cava btop plank kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop python3-pip procps tty-clock fzf lsd bat pamixer flameshot
+	sudo apt install -y caja guake cmus cava btop plank kitty rofi feh xclip ranger i3lock-fancy scrot scrub wmname imagemagick cmatrix htop python3-pip procps tty-clock fzf lsd bat pamixer flameshot
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install some packages!\n${endColour}"
 		exit 1
@@ -261,6 +259,7 @@ else
 	sleep 2
 	sudo cp -v $dir/scripts/whichSystem.py /usr/local/bin/
 	cp -rv $dir/scripts/*.sh ~/.config/polybar/shapes/scripts/
+	cp -r $dir/refresh ~/.local/bin/refresh
 	touch ~/.config/polybar/shapes/scripts/target
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5

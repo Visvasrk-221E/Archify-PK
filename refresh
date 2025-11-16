@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pkill eww
+bspc wm -r
